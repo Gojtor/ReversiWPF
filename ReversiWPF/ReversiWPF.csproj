@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Images\blackPiece.png" />
+    <None Remove="View\Images\whitePiece.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReversiTest\ReversiTest.csproj" />
+    <ProjectReference Include="..\Reversi\Reversi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Images\blackPiece.png" />
+    <Resource Include="View\Images\whitePiece.png" />
+  </ItemGroup>
+
+</Project>
